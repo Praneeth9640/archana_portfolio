@@ -1,0 +1,17 @@
+{
+  "name": "Archana N — Software Test Engineer",
+  "short_name": "Archana N",
+  "description": "Portfolio of Archana N, Software Test Engineer specializing in Playwright automation, API integrity, JMeter performance, and cybersecurity QA.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#05060a",
+  "theme_color": "#05060a",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
