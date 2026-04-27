@@ -4,7 +4,7 @@ export const personal = {
   location: "Hyderabad, India",
   email: "narsingojuarchana27@gmail.com",
   phone: "+91 77026 39270",
-  linkedin: "https://www.linkedin.com/in/archana-n",
+  linkedin: "https://www.linkedin.com/in/archana-narsingoju/",
   github: "https://github.com/",
   yearsExperience: 4,
   available: true,
