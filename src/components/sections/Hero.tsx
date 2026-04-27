@@ -105,7 +105,7 @@ export default function Hero() {
           <div className="lg:col-span-8">
             <div
               data-hero-eyebrow
-              className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/10 bg-white/[0.03] px-3 py-1.5 text-[10px] text-white/70 backdrop-blur-md sm:text-xs"
+              className="inline-flex max-w-full items-center gap-2 rounded-full border border-white/10 bg-ink-800 px-3 py-1.5 text-[10px] text-white/70 sm:text-xs"
             >
               <Sparkles size={12} className="flex-shrink-0 text-accent-cyan" />
               <span className="truncate uppercase tracking-[0.2em]">
@@ -176,7 +176,7 @@ export default function Hero() {
 
           {/* Decorative right card */}
           <div className="lg:col-span-4">
-            <div className="ring-gradient relative overflow-hidden rounded-3xl bg-ink-900/60 p-5 backdrop-blur-xl sm:p-6">
+            <div className="ring-gradient relative overflow-hidden rounded-3xl bg-ink-900 p-5 sm:p-6">
               <div className="flex flex-wrap items-center justify-between gap-2">
                 <span className="flex items-center gap-2 text-xs text-white/50">
                   <span className="relative flex h-2 w-2">

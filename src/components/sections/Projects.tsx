@@ -84,7 +84,7 @@ export default function Projects() {
                           className="absolute inset-0 h-full w-full object-cover object-left-top transition-transform duration-700 ease-out group-hover/visual:scale-[1.04]"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-ink-950/80 via-ink-950/20 to-transparent" />
-                        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-xl border border-white/15 bg-ink-900/70 px-3 py-2 backdrop-blur-md">
+                        <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between rounded-xl border border-white/15 bg-ink-900/90 px-3 py-2">
                           <span className="font-mono text-[10px] uppercase tracking-[0.18em] text-white/70">
                             {p.name} · live product
                           </span>
@@ -98,7 +98,7 @@ export default function Projects() {
                       <>
                         <div className="absolute inset-0 bg-noise opacity-[0.4] mix-blend-overlay" />
                         <div className="absolute inset-0 grid-overlay opacity-50" />
-                        <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/10 bg-ink-900/70 p-3 backdrop-blur-md">
+                        <div className="absolute bottom-4 left-4 right-4 rounded-xl border border-white/10 bg-ink-900/90 p-3">
                           <div className="flex items-center justify-between">
                             <div className="flex gap-1.5">
                               <span className="h-2.5 w-2.5 rounded-full bg-red-400/80" />

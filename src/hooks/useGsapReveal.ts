@@ -38,12 +38,11 @@ export function useGsapReveal<T extends HTMLElement>(options: Options = {}) {
       const targets = el.querySelectorAll<HTMLElement>(selector);
       if (!targets.length) return;
 
-      gsap.set(targets, { opacity: 0, y, filter: "blur(6px)" });
+      gsap.set(targets, { opacity: 0, y });
 
       gsap.to(targets, {
         opacity: 1,
         y: 0,
-        filter: "blur(0px)",
         duration,
         delay,
         stagger,

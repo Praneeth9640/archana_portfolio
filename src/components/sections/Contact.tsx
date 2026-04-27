@@ -28,7 +28,7 @@ export default function Contact() {
       ref={ref}
       className="container-px section-y mx-auto max-w-7xl"
     >
-      <div className="ring-gradient relative overflow-hidden rounded-[28px] bg-ink-900/60 p-5 backdrop-blur-xl sm:rounded-[36px] sm:p-8 md:p-14">
+      <div className="ring-gradient relative overflow-hidden rounded-[28px] bg-ink-900 p-5 sm:rounded-[36px] sm:p-8 md:p-14">
         {/* Glow accents */}
         <div className="pointer-events-none absolute -top-32 left-1/2 h-96 w-[140%] -translate-x-1/2 rounded-full bg-[radial-gradient(closest-side,rgba(124,92,255,0.18),transparent)] blur-3xl" />
 
@@ -97,7 +97,7 @@ export default function Contact() {
             <form
               data-reveal
               onSubmit={onSubmit}
-              className="space-y-4 rounded-3xl border border-white/10 bg-white/[0.02] p-5 backdrop-blur-md sm:p-6 md:p-8"
+              className="space-y-4 rounded-3xl border border-white/10 bg-ink-800 p-5 sm:p-6 md:p-8"
             >
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
                 <Field name="name" label="Your name" placeholder="Jane Doe" />

@@ -10,19 +10,20 @@ html {
   scroll-behavior: smooth;
 }
 
-html,
-body,
-#root {
-  height: 100%;
-}
-
 body {
+  min-height: 100vh;
+  min-height: 100dvh;
   background:
     radial-gradient(1200px 600px at 80% -10%, rgba(124, 92, 255, 0.18), transparent 60%),
     radial-gradient(900px 500px at -10% 30%, rgba(34, 211, 238, 0.12), transparent 60%),
     #05060a;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow-x: clip;
 }
 
 ::selection {
@@ -30,7 +31,6 @@ body {
   color: #fff;
 }
 
-/* Hide scrollbar in marquee */
 .no-scrollbar::-webkit-scrollbar {
   display: none;
 }
@@ -39,8 +39,6 @@ body {
   scrollbar-width: none;
 }
 
-/* Marquee keyframes — kept in global CSS so they always ship,
-   regardless of Tailwind JIT class detection. */
 @keyframes marquee {
   0% {
     transform: translate3d(0, 0, 0);
@@ -61,7 +59,6 @@ body {
   animation-play-state: paused;
 }
 
-/* Custom scrollbar */
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -94,7 +91,7 @@ body {
   }
 
   .glass {
-    @apply bg-white/[0.03] border border-white/10 backdrop-blur-xl;
+    @apply bg-ink-800 border border-white/10;
   }
 
   .glass-hover {
@@ -141,11 +138,10 @@ body {
   }
 
   .btn-secondary {
-    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white/90 backdrop-blur-md transition-all duration-300 hover:bg-white/10 hover:border-white/25 hover:scale-[1.02] active:scale-[0.98];
+    @apply relative inline-flex items-center justify-center gap-2 rounded-full border border-white/15 bg-ink-800 px-6 py-3 text-sm font-semibold text-white/90 transition-all duration-300 hover:bg-white/10 hover:border-white/25 hover:scale-[1.02] active:scale-[0.98];
   }
 }
 
-/* Reduced motion */
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,

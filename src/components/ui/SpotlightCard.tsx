@@ -34,7 +34,7 @@ export default function SpotlightCard({ children, className = "" }: Props) {
             "radial-gradient(450px circle at var(--mx) var(--my), rgba(124,92,255,0.18), transparent 40%)",
         }}
       />
-      <div className="relative rounded-[calc(theme(borderRadius.3xl)-1px)] bg-ink-900/60 backdrop-blur-xl">
+      <div className="relative rounded-[calc(theme(borderRadius.3xl)-1px)] bg-ink-900">
         {children}
       </div>
     </div>

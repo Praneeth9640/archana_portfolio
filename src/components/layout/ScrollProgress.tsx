@@ -1,4 +1,5 @@
 import { useEffect, useRef } from "react";
+import { createPortal } from "react-dom";
 
 export default function ScrollProgress() {
   const barRef = useRef<HTMLDivElement | null>(null);
@@ -17,13 +18,17 @@ export default function ScrollProgress() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  return (
-    <div className="fixed left-0 right-0 top-0 z-50 h-[2px] bg-white/5">
+  return createPortal(
+    <div
+      style={{ position: "fixed", top: 0, left: 0, right: 0, zIndex: 10000 }}
+      className="h-[2px] bg-white/5"
+    >
       <div
         ref={barRef}
         className="h-full origin-left bg-gradient-to-r from-accent-violet via-accent-cyan to-accent-lime"
         style={{ transform: "scaleX(0)" }}
       />
-    </div>
+    </div>,
+    document.body
   );
 }

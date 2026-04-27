@@ -54,7 +54,7 @@ export default function Skills() {
           <div
             data-reveal
             key={group.title}
-            className="ring-gradient rounded-3xl bg-ink-900/60 p-6 backdrop-blur-xl sm:p-7"
+            className="ring-gradient rounded-3xl bg-ink-900 p-6 sm:p-7"
           >
             <div className="flex items-baseline justify-between">
               <h3 className="font-display text-xl font-semibold text-white">

@@ -51,23 +51,23 @@ export default function Experience() {
         description="Every role pushed me deeper into automation, security, and the discipline of shipping with confidence."
       />
 
-      <div ref={lineWrap} className="relative mt-16 pl-8 md:pl-12">
+      <div ref={lineWrap} className="relative mt-16 pl-10 md:pl-12">
         {/* Timeline rail */}
-        <span className="absolute left-2 top-0 h-full w-px bg-white/[0.06] md:left-4" />
+        <span className="absolute left-[15px] top-0 h-full w-px bg-white/[0.06] md:left-[19px]" />
         <span
           data-line
-          className="absolute left-2 top-0 h-full w-px origin-top bg-gradient-to-b from-accent-violet via-accent-cyan to-accent-lime md:left-4"
+          className="absolute left-[15px] top-0 h-full w-px origin-top bg-gradient-to-b from-accent-violet via-accent-cyan to-accent-lime md:left-[19px]"
         />
 
         {experience.map((job) => (
           <div data-reveal key={job.company} className="relative pb-10">
             {/* Node */}
-            <span className="absolute -left-[26px] top-1.5 flex h-3.5 w-3.5 items-center justify-center md:-left-[34px]">
+            <span className="absolute -left-[32px] top-2 flex h-3.5 w-3.5 items-center justify-center md:-left-[36px]">
               <span className="absolute h-3.5 w-3.5 rounded-full bg-accent-violet/30" />
               <span className="relative h-2 w-2 rounded-full bg-white shadow-glow-violet" />
             </span>
 
-            <div className="ring-gradient rounded-3xl bg-ink-900/60 p-6 backdrop-blur-xl sm:p-7">
+            <div className="ring-gradient rounded-3xl bg-ink-900 p-6 sm:p-7">
               <div className="flex flex-wrap items-baseline justify-between gap-2">
                 <div className="min-w-0">
                   <p className="font-display text-xl font-semibold text-white sm:text-2xl">
@@ -99,7 +99,7 @@ export default function Experience() {
 
         {/* Certifications */}
         <div data-reveal className="relative">
-          <span className="absolute -left-[26px] top-1.5 h-2 w-2 rounded-full bg-white/60 md:-left-[34px]" />
+          <span className="absolute -left-[29px] top-2 h-2 w-2 rounded-full bg-white/60 md:-left-[33px]" />
           <div className="rounded-3xl border border-white/10 bg-white/[0.02] p-6">
             <p className="font-display text-lg font-semibold text-white">
               Certifications
